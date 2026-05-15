@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Roulette</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎡 Game Roulette</h1>
+        <p class="subtitle">Spin the wheel and discover your game!</p>
+        
+        <div class="roulette-container">
+            <div class="roulette-wheel" id="rouletteWheel">
+                <div class="segment segment-1">Tetris</div>
+                <div class="segment segment-2">Chess</div>
+                <div class="segment segment-3">Snake</div>
+                <div class="segment segment-4">Pong</div>
+                <div class="segment segment-5">Pac-Man</div>
+                <div class="segment segment-6">Flappy Bird</div>
+                <div class="segment segment-7">2048</div>
+                <div class="segment segment-8">Sudoku</div>
+            </div>
+            <div class="pointer"></div>
+        </div>
+        
+        <button class="spin-btn" id="spinBtn">SPIN!</button>
+        
+        <div class="result-container" id="resultContainer" style="display:none;">
+            <p class="result-text">You got:</p>
+            <p class="result-game" id="resultGame"></p>
+            <button class="play-btn" id="playBtn">Play Game</button>
+        </div>
+        
+        <div class="stats">
+            <h3>Statistics</h3>
+            <div id="stats"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
